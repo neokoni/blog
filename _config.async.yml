@@ -104,6 +104,10 @@ top_bars:
     url: /links/
 
 links:
+  - name: BugCraft
+    url: https://bugcraft.org/
+    image: https://bugcraft.org/favicon.svg
+    desc: There are many bugs to play.
   - name: whycf的小站
     url: https://whycf.top
     image: https://whycf.top/wp-content/uploads/2023/07/1小.png
