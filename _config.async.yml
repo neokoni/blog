@@ -8,17 +8,17 @@ user:
   name: "Neokoni"
   first_name: Blog
   last_name: "Neokoni's "
-  email: me@neokoni.moe
-  domain: "neokoni.moe"
+  email: me@neokoni.ink
+  domain: "neokoni.ink"
   avatar: https://avatars.githubusercontent.com/u/90206655
   describe: Follow that star
-  ruleText: "联系添加,冲突信息以此行为准Title: Neokoni's Home;简介:Follow that star;image:https://resource.neokoni.moe/neokoni/svg/favicon.svg"
+  ruleText: "联系添加,冲突信息以此行为准Title: Neokoni's Home;简介:Follow that star;image:https://res.neokoni.ink/neokoni/svg/favicon.svg"
 
 # Configure the icon information of the site
 favicon:
-  logo: https://resource.neokoni.moe/neokoni/svg/favicon.svg
-  icon16: https://resource.neokoni.moe/neokoni/svg/favicon.svg
-  icon32: https://resource.neokoni.moe/neokoni/ico/favicon.ico
+  logo: https://res.neokoni.ink/neokoni/svg/favicon.svg
+  icon16: https://res.neokoni.ink/neokoni/svg/favicon.svg
+  icon32: https://res.neokoni.ink/neokoni/ico/favicon.ico
   appleTouchIcon: 
   webmanifest:
   visibilitychange: false
@@ -166,7 +166,7 @@ sidebar:
   social:
     - name: Github
       icon: fab fa-github
-      url: https://github.com/sekaom
+      url: https://github.com/neokoni
     
 
 # About page settings
@@ -212,7 +212,7 @@ reward:
   comment: reward.comment
   # url:
   methods: 
-  url: https://donate.neokoni.moe
+  url: https://donate.neokoni.ink
 
 # Article table of contents
 toc:
@@ -325,7 +325,7 @@ search:
   # href: 'https://www.google.com/search?q=site:'
   # href: "https://www.baidu.com/s?wd=site:"
   href: "https://www.bing.com/search?q=site:"
-  domain: blog.neokoni.moe
+  domain: blog.neokoni.ink
 
 # Think of swup as being pjax on steroids. The concepts are similar to those used in barba.js or other transition libraries.
 # https://swup.js.org/
