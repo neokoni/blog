@@ -128,6 +128,10 @@ links:
     url: http://www.ecraft2008.top/
     image: https://pic.imgdb.cn/item/65ba6cce871b83018ad545eb.jpg
     desc: 行动胜于言辞
+  - name: MCJPG社区
+    url: https://com.mcjpg.org
+    image: https://mcjpg.org/logo.png
+    desc: ''
 # Banner settings
 banner:
   use_cover: false
