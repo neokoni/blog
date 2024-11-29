@@ -43,7 +43,7 @@ sudo apt update && sudo apt upgrade
 
 `git-lfs`这个在部分仓库需要用到，缺少可能会导致部分依赖它同步的文件打开后显示lfs信息。而不是本体文件
 ```bash
-sudo apt install git gnupg flex bison build-essential zip curl zlib1g-dev libc6-dev-i386 libncurses6 lib32ncurses-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig libssl-dev openjdk-8-jdk repo ccache git-lfs
+sudo apt install git gnupg flex bison build-essential zip curl zlib1g-dev libc6-dev-i386 libncurses6 lib32ncurses-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig libssl-dev openjdk-8-jdk repo ccache git-lfs libelf-dev
 ```
 ## 设置git信息
 源码同步会提示要求设置git的信息，这里就不多说了，直接设置一下就行  
