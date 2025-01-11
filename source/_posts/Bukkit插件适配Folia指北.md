@@ -22,7 +22,7 @@ cover: ../picture/bukkit-plugins-on-folia/folia-banner.webp
 
 可能因为其庞大的代码量或者对Folia前景并没太大希望，粘液科技[并未计划适配Folia](https://github.com/Slimefun/Slimefun4/issues/4217)
 
-在看到友商的Folia服务端性能表现后，我决定下个周末也使用Folia或其优化分支作为服务端。  
+在看到友商的Folia服务端性能表现后，我决定下个周目也使用Folia或其优化分支作为服务端。  
 
 但是作为传统玩粘液科技的服务器，粘液科技并不适配。那怎么办？自己适配
 
@@ -78,7 +78,7 @@ cover: ../picture/bukkit-plugins-on-folia/folia-banner.webp
     <dependency>
         <groupId>com.github.technicallycoded</groupId>
         <artifactId>FoliaLib</artifactId>
-        <version>改为上方便签写的版本号</version>
+        <version>改为上方标签显示的版本号</version>
         <scope>compile</scope>
     </dependency>
 </dependencies>
@@ -130,7 +130,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.github.technicallycoded:FoliaLib:main-SNAPSHOT"
+    implementation "com.github.technicallycoded:FoliaLib:改为上方显示的版本号"
 }
 
 shadowJar {
@@ -165,7 +165,7 @@ public final class 插件名 {
     }
 }
 ```
-之后即可通过调用主类获取FoliaLib实例，如`Slimefun.getFoliaLib.getScheduler()`
+之后即可通过调用主类获取FoliaLib实例，如`Slimefun.getFoliaLib().getScheduler()`
 
 ## 代替BukkitScheduler
 ### 一般Scheduler
@@ -188,13 +188,13 @@ FoliaLib提供的`Scheduler`类与BukkitScheduler类似，但在`命名`和`传�
 
 这并非所有的类，更多类需要按自己需求选择
 
-在传入参数中，foliaLib并不需要输入`Plugin`类，其他参数大致不变，分为`Runnable`和`Consumer<WrappedTask>`类的参数，其中`Runnable`和`Consumer<WrappedTask>`类只会出现一次，不会同时要求提供两个参数
+在传入参数中，foliaLib并不需要输入`Plugin`类的参数，其他参数大致不变，分为`Runnable`和`Consumer<WrappedTask>`类的参数，其中`Runnable`和`Consumer<WrappedTask>`类只会出现一次，不会同时要求提供两个参数
 
 ### Task类
-需要将原来使用的`BukkitTask`类替换为`WrappedTask`类，两者可以平滑替换，最多是导入类的报错，但是BukkitScheduler并不能接受`WrappedTask`类，WrappedTask类也是一样，所以一定要一一对应
+需要将原来使用的`BukkitTask`类替换为`WrappedTask`类，两者可以平滑替换，最多是未导入包的报错，但是BukkitScheduler并不能接受`WrappedTask`类，WrappedTask类也是一样，所以一定要一一对应
 
 ### Scheduler类的Lambda表达式
-一般的`() -> { }`类并不需要特别更改，但是如果有Idea报错的，如这种，可以参照如下示例更改
+一般的`() -> { }`并不需要特别更改，但是如果有Idea报错的，如这种，可以参照如下示例更改
 ```diff
 - Bukkit.getScheduler().scheduleSyncDelayedTask(this, new AutoUpdateTask(this, getFile()));
 + getFoliaLib().getScheduler().runAsync(wrappedTask ->  new AutoUpdateTask(this, getFile()));
@@ -456,6 +456,6 @@ java.lang.UnsupportedOperationException: Must use teleportAsync while in region 
 
 - [Craft233MC/Slimefun4/issues](https://github.com/Craft233MC/Slimefun4/issues)
 
-- [me@neokoni.ink](maito:me@neokoni.ink)
+- [me@neokoni.ink](mailto:me@neokoni.ink)
 
 如果你觉得这个项目对您有帮助，欢迎给我一个star或[DonateMe](https://dq.neokoni.ink)支持！
