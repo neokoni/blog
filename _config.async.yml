@@ -12,7 +12,7 @@ user:
   domain: "neokoni.ink"
   avatar: https://avatars.githubusercontent.com/u/90206655
   describe: Follow that star
-  ruleText: "联系添加,冲突信息以此行为准Title: Neokoni's Home;简介:Follow that star;image:https://res.neokoni.ink/neokoni/svg/favicon.svg"
+  ruleText: "" #"联系添加,冲突信息以此行为准Title: Neokoni's Home;简介:Follow that star;image:https://res.neokoni.ink/neokoni/svg/favicon.svg"
 
 # Configure the icon information of the site
 favicon:
@@ -106,7 +106,7 @@ top_bars:
 links:
   - name: BugCraft
     url: https://bugcraft.org/
-    image: https://bugcraft.org/favicon.svg
+    image: https://bugcraft.org/upload/favicon.svg
     desc: There are many bugs to play.
   - name: whycf的小站
     url: https://whycf.top
@@ -119,7 +119,7 @@ links:
   - name: 北尘的小窝
     url: https://www.beichen.icu
     image: https://www.beichen.icu/images/Favicon.webp
-    desc: 呜呜呜~整体UI变得更不错了呢
+    desc: "青春年少，心怀梦想，却发现越是拼命追逐，渴望的爱情却似乎越远。"
 # Banner settings
 banner:
   use_cover: false
@@ -200,7 +200,7 @@ footer:
 # If enable true, reward would be displayed in every posts and pages by default.
 # You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
 reward:
-  enable: true
+  enable: false
   comment: reward.comment
   # url:
   methods: 

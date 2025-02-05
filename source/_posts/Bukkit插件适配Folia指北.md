@@ -5,7 +5,7 @@ tags:
     - 教程
     - 折腾
     - 开发
-    - Minecrast
+    - Minecraft
 banner:
     type: img
     bgurl: ../picture/bukkit-plugins-on-folia/folia-banner.webp
