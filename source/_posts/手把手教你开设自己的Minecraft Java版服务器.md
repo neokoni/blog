@@ -54,8 +54,6 @@ java -jar -Xmx8G 你的服务端文件名 nogui
 再次运行启动脚本，即可正常启动服务器
 ## 保持后台运行
 使用但命令行管理是一个原始的办法，且远程管理并不便携，采用<code>网页管理面板管理是个更好的选择，这里推荐[MCSManager](https://mcsmanager.com/)  
-Windows使用由于node版本限制，最好使用wind8.1及以上版本，升级win10或者win11是个更好的选择  
-如果你是Windows用户，在[这里](oss.duzuii.com/MCSManager/MCSManager-ZH)下载Windows版本的压缩包，解压，按照<code>使用说明.txt</code>启动。浏览器访问<code>本机ip:23333</code>即可打开网页面板。
 如果你是Linux用户，在终端运行以下命令，它会自动完成安装，浏览器访问<code>本机ip:23333</code>即可打开网页面板。
 ```
 sudo wget -qO- https://gitee.com/mcsmanager/script/raw/master/setup_cn.sh | bash
