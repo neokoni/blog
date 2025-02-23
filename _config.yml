@@ -108,5 +108,11 @@ theme: async
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+hexo_indexnow:
+  count: latest # 数字或者 "latest"(=1)
+  txt_name: b5a622b7559445ec9dbc8b224da0fbe4.txt # 链接文件名
+  apikey: b5a622b755945ec9dbc8b24da0fbe4 # 你的 apikey
+  server: bing # indexnow 服务器，可选值有:bing、yandex、indexnow
+
 deploy:
-  type: ''
+  - type: indexnow_url_submitter
