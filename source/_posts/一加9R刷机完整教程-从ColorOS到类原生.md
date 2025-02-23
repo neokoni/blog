@@ -43,7 +43,7 @@ cover: ../picture/Oneplus9R_flash/banner.png
 
 解压后会得到如下图所示的文件
 
-![](../picture/Oneplus9R_flash/9008firmware.png)
+![9008package](../picture/Oneplus9R_flash/9008firmware.png)
 
 这一步需要在Windows环境下进行
 
@@ -57,7 +57,7 @@ cover: ../picture/Oneplus9R_flash/banner.png
 
 你将看到以下内容
 
-![](../picture/Oneplus9R_flash/flash_tool_login.png)
+![loginselect](../picture/Oneplus9R_flash/flash_tool_login.png)
 
 因为我们并没有工厂账号，因此我们只能使用游客号
 
@@ -65,7 +65,7 @@ cover: ../picture/Oneplus9R_flash/banner.png
 
 接下来就是软件的主界面
 
-![](../picture/Oneplus9R_flash/9008_tool_main.png)
+![appmain](../picture/Oneplus9R_flash/9008_tool_main.png)
 
 接着，将手机关机，关机状态下按住`音量+`和`音量—`并同时插入与电脑连接的数据线
 

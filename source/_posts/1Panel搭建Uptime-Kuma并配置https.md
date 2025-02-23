@@ -17,7 +17,7 @@ cover: ../picture/1Panel搭建Uptime-kuma/fengmian.png
 第一步就是安装Uptime Kuma和OpenResty  
 登陆1Panel,点击应用商店，找到Uptime Kuma和OpenResty点击安装  
 因为是docker容器的安装方式，所以直接安装很快就能完成  
-![](../picture/1Panel搭建Uptime-kuma/app.jpg)
+![1panel-appstore](../picture/1Panel搭建Uptime-kuma/app.jpg)
 ## 配置反代理
 Uptime kuma默认端口是3001而且是http，外网访问总显示不安全  
 这玩意本来就是给别人看的，所以还是配置下https
@@ -35,7 +35,7 @@ Uptime kuma默认端口是3001而且是http，外网访问总显示不安全
 https肯定还是要一个ssl证书的，1Panel自带Acme一键生成且自动续签  
 1Panel点击"证书" 没有Acme账户要创建一个，很简单，输入邮箱就可以了  
 然后点击"DNS账户"用于自动验证域名所有权进行DNS认证(不添加也行，可以手动解析验证)  
-![](../picture/1Panel搭建Uptime-kuma/auth.png)
+![dns-auth-method](../picture/1Panel搭建Uptime-kuma/auth.png)
 DNS账号支持添加阿里云，DNSPod和CloudFlare  
 完成后点击添加证书，主域名是你后续要外部访问的域名，其他域名顾名思义，按想要添加  
 acme账户选择刚添加的  
@@ -54,14 +54,14 @@ acme账户选择刚添加的
 之前我们在"域名设置"里设置了反代理到的域名+端口  
 但是如果访问有问题，https连接拒绝，就需要手动改配置文件  
 点击"网站设置"旁边的"配置文件"进行编辑  
-![](../picture/1Panel搭建Uptime-kuma/peizhi.png)
+![edi5](../picture/1Panel搭建Uptime-kuma/peizhi.png)
 打开后能看见只为监听的443端口开启了https连接  
-![](../picture/1Panel搭建Uptime-kuma/config.png)
+![config](../picture/1Panel搭建Uptime-kuma/config.png)
 因为我们是监听3010端口并开启https,所以在3010端口后内容和443端口一样就行  
 就像这样  
-![](../picture/1Panel搭建Uptime-kuma/config2.png)
+![myconfig](../picture/1Panel搭建Uptime-kuma/config2.png)
 点击"保存并重载"，就会发现3010端口已经可以连接并使用https了  
-![](../picture/1Panel搭建Uptime-kuma/done.jpg)
+![warnhttps](../picture/1Panel搭建Uptime-kuma/done.jpg)
 ## 配置公网访问 
 想要随时可以查看，那就需要映射到公网访问  
 这里使用[OpenFrp](https://openfrp.net/)进行映射访问  
@@ -90,8 +90,8 @@ acme账户选择刚添加的
 进入到你的域名DNS管理平台，我这里是阿里云  
 添加一条CNAME类型的解析，主机记录填写二级域名，比如我是"status"  
 记录值填写frpc启动后给出的节点域名  
-![](../picture/1Panel搭建Uptime-kuma/frpc.jpg)
+![frpc](../picture/1Panel搭建Uptime-kuma/frpc.jpg)
 其他默认不管
 ## 结束
 到这里应该就可以使用域名随时访问Uptime Kuma了，但是请保持反代理,frpc和Uptime Kuma打开
-![](../picture/1Panel搭建Uptime-kuma/ender.jpg)
+![result](../picture/1Panel搭建Uptime-kuma/ender.jpg)

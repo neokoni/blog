@@ -44,7 +44,7 @@ cover: ../picture/bukkit-plugins-on-folia/folia-banner.webp
 可以看到，PaperMC在Folia中将`Scheduler`进行了优化，将其分为例如`RegionScheduler`和`EntityScheduler`等不同类型的调度器，以实现对不同的调度。
 
 在Folia的JavaDoc中，PaperMC已经将Bukkit Scheduler标记为了已弃用Deprecated。
-![](../picture/bukkit-plugins-on-folia/bukkit-scheduler-deprecated.png)
+![deprecated](../picture/bukkit-plugins-on-folia/bukkit-scheduler-deprecated.png)
 
 ## 思路
 理论上，我们只需要将原本由BukkitAPI提供的`BukkitScheduler`改写为由PaperAPI提供的`RegionScheduler`和`EntityScheduler`，并改写`聊天`和`传送`等一起被废弃的旧API即可

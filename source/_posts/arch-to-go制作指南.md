@@ -26,9 +26,9 @@ cover: ../picture/archtogo/banner.png
 ## 虚拟机设置及其他
 打开virtual box,点击新建，选择完基本的信息，选择勾选<code>启用EFI</code>，磁盘这里要选择分配全部空间  
 我这里就分配70G,剩余空间用来存放东西
-![](../picture/archtogo/vir1.png)
-![](../picture/archtogo/vir2.png)
-![](../picture/archtogo/vir3.png)
+![virbox1](../picture/archtogo/vir1.png)
+![virbox2](../picture/archtogo/vir2.png)
+![virbox3](../picture/archtogo/vir3.png)
 之后正常安装ArchLinux或者其他的Linux系统即可
 {% note warning %}
 运行grub-install时需要带上<code>--removable</code>参数  
@@ -39,9 +39,9 @@ cover: ../picture/archtogo/banner.png
 这里需要用到一个对ventoy的处理，[这里](https://www.ventoy.net/cn/plugin_vtoyboot.html)有对处理的解释  
 1.到[Vtoyboot](https://github.com/ventoy/vtoyboot/releases)下载vtoyboot文件  
 并挂载到虚拟机，复制到主目录解压后，终端内以root权限执行文件夹内的vtoyboot.sh
-![](../picture/archtogo/vtoyboot.png)
+![vtoyboot](../picture/archtogo/vtoyboot.png)
 2.复制虚拟磁盘镜像到U盘的Ventoy分区并改为.vtoy后缀  
-![](../picture/archtogo/U.png)  
+![udisk](../picture/archtogo/U.png)  
 不出意外的话现在已经可以从U盘启动Linux了，此方法适用于大多数Linux系统
 ## 相关链接
 [Ventoy下载](https://www.ventoy.net/cn/download.html)  

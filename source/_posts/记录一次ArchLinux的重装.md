@@ -196,7 +196,7 @@ echo LANG=en_US.UTF-8 >> /etc/locale.conf
 不要疑问，就是英文。控制台下不要设置中文，会乱码！
 ## 设置设备名
 最直观的就是bash显示的这个  
-![](../picture/ArchLinux%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/1.png)  
+![bashusername](../picture/ArchLinux%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/1.png)  
 输入下面的命令就可以设置了，"archlinux"可以换成你准备用的  
 {% code  %}
 echo "archlinux" >> /etc/hostname
@@ -224,7 +224,7 @@ vim /etc/hosts
 vim /etc/pacman.conf
 {% endcode %} 
 找到最后一部分，去掉multilib的注释，然后设置成如图
-![](../picture/ArchLinux安装记录/2.png)
+![pacman.d](../picture/ArchLinux安装记录/2.png)
 然后更新下源
 {% code  %}
 pacman -Syyu
@@ -243,7 +243,7 @@ pacman -S yay
 %wheel ALL=(ALL:ALL) ALL
 {% endcode %} 
 大概就这个样子  
-![](../picture/ArchLinux安装记录/3.png)
+![pacman.dresult](../picture/ArchLinux安装记录/3.png)
 保存退出即可
 ## 设置开机启动的服务
 保存这些设置可以让他们开机后自动启动，以免造成一些功能的无法使用

@@ -30,9 +30,9 @@ pdo_dblib,pdo_firebird,pdo_mysql,pdo_oci,pdo_odbc,pdo_pgsql,pdo_sqlsrv,mbstring,
 ```
 这一步主要是因为创建环境时的扩展并不能批量导入，只能使用扩展功能  
 当然，你也可以手动输入（
-![](../picture/blessing_skin/1panel_php.png)
+![installphpplugin](../picture/blessing_skin/1panel_php.png)
 接着返回"创建运行环境"来创建一个php8.1的环境，并选择刚刚创建的模板，点击创建，等待创建完毕
-![](../picture/blessing_skin/1panel_php2.png)
+![installphp2](../picture/blessing_skin/1panel_php2.png)
 {% note warning%}
 不要选择更高的版本！blessing skin可能会不支持，导致运行blessing skin的安装页报错500！  
 详情查看[issue区](https://github.com/bs-community/blessing-skin-server/issues?q=is%3Aissue+500)
@@ -44,7 +44,7 @@ pdo_dblib,pdo_firebird,pdo_mysql,pdo_oci,pdo_odbc,pdo_pgsql,pdo_sqlsrv,mbstring,
 {% endnote %}
 ### 创建网站
 转到网站->网站，创建网站，选择运行环境，类型php,运行环境选择之前创建的环境，域名看实际情况填写，内网的话0.0.0.0都行，可以指定端口
-![](../picture/blessing_skin/1panel_php3.png)
+![createweb](../picture/blessing_skin/1panel_php3.png)
 接着配置刚创建的网站，点击网站目录，打开主目录的文件夹，在<code>index</code>文件夹里上传blessing skin server的压缩包并解压。  
 接着回到网站设置->网站目录，更改为<code>/public</code>文件夹  
 接着点击<code>伪静态</code>并填入以下规则
@@ -54,8 +54,8 @@ location / {
 }
 ```
 点击保存并重载
-![](../picture/blessing_skin/1panel_php4.png)
-![](../picture/blessing_skin/1panel_php5.png)
+![saveconfig1](../picture/blessing_skin/1panel_php4.png)
+![saveconfig2](../picture/blessing_skin/1panel_php5.png)
 ### 初始化blessing skin
 不出意外，访问你的主机ip(端口)就可以看到皮肤站的安装页面，按照提示完成即可  
 皮肤站需要连接数据库  
