@@ -4,11 +4,11 @@
 
 # Site
 title: "Neokoni's Blog"
-subtitle: ''
-description: ''
-keywords:
+subtitle: 'write,document and share'
+description: 'Neokoni的博客小站，记录折腾过程。闲时所做的一些小东西，也许可以帮到呢？'
+keywords: [blog, neokoni, dev, document, personblog]
 author: Neokoni
-language: en
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 #blog search
